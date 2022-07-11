@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.threadmanager.StatesActivity"
+    android:orientation="vertical"
+    android:id="@+id/rootContainer">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="~ Thread Manager ~"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:fontFamily="times"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:backgroundTint="#0B0B45"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Create and Start Thread"
+        android:onClick="onBtnCreateClicked" />
+
+    <Button
+        android:id="@+id/btnSleep"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#0B0B45"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sleep Thread"
+        android:onClick="onBtnSleepClicked"/>
+
+
+    <Button
+        android:id="@+id/btnBlock"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#0B0B45"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Block Thread"
+        android:onClick="onBtnBlockClicked"/>
+
+    <Button
+        android:id="@+id/btnWait"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#0B0B45"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wait Thread"
+        android:onClick="onBtnWaitClicked"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="State Console"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/statetxv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ADD8E6"
+        android:lines="22"
+        android:textStyle="italic"
+        android:fontFamily="times"
+        android:text=""
+        android:textColor="@color/black" />
+
+</LinearLayout>
